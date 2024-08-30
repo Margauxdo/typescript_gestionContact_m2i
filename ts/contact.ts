@@ -13,7 +13,7 @@ export class Contact{
         this.phoneNumber = phoneNumber;
     }
 
-    public get getfirstName(): string{
+    public get getFirstName(): string{
      return this.firstName;
     }
 

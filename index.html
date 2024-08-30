@@ -10,7 +10,7 @@
     <body>
         <h1>Annuaire : gestion des Contacts</h1>
 
-        <form id="contactForm">
+        <form id="contactForm" class="contactModal">
             <h2>Add a Contact</h2>
             <label for="name">Firstname:</label>
             <input type="text" id="firstname" required>
@@ -22,25 +22,25 @@
             <input type="email" id="email" required>
             <label for="phone">Phone number:</label>
             <input type="text" id="phone" required>
-            <button type="submit">Send</button>
+            <button type="submit" id="sendBtn">Send</button>
         </form>
 
         <div class="containListContacts">
             <h2>List of Contacts</h2>
             <ul id="contactList"></ul>
-            <button class="addContact">Add</button>
+            <button class="addContactBtn">Add</button>
         </div>
 
        
         <div id="contactDetails" >
             <h2>Détails du Contact</h2>
-        <p id="detailsFirstName"></p>
-        <p id="detailslastName"></p>
-        <p id="detailsBirth"></p>
-        <p id="detailsEmail"></p>
-        <p id="detailsPhone"></p>
-        <button id="editContact">Edit</button>
-        <button id="deleteContact">Delete</button>
+        <p id="detailFirstName"></p>
+        <p id="detaillastName"></p>
+        <p id="detailBirth"></p>
+        <p id="detailEmail"></p>
+        <p id="detailPhone"></p>
+        <button id="editContactBtn">Edit</button>
+        <button id="deleteContactBtn">Delete</button>
         </div>
 
         <div id="editForm">
@@ -54,7 +54,7 @@
             <input type="email" id="editEmail">
             <label for="editPhone">Téléphone:</label>
             <input type="text" id="editPhone">
-            <button id="saveEdit">Send</button>
+            <button id="saveEditBtn">Send</button>
             
         </div>
 
