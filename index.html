@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        <h1>Annuaire : gestion des Contacts</h1>
+
+        <form id="contactForm">
+            <h2>Add a Contact</h2>
+            <label for="name">Firstname:</label>
+            <input type="text" id="firstname" required>
+            <label for="name">Lastname:</label>
+            <input type="text" id="lastname" required>
+            <label for="phone">Date Of Birth:</label>
+            <input type="date" id="birth" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="phone">Phone number:</label>
+            <input type="text" id="phone" required>
+            <button type="submit">Send</button>
+        </form>
+
+        <div class="containListContacts">
+            <h2>List of Contacts</h2>
+            <ul id="contactList"></ul>
+            <button class="addContact">Add</button>
+        </div>
+
+       
+        <div id="contactDetails" >
+            <h2>Détails du Contact</h2>
+        <p id="detailsFirstName"></p>
+        <p id="detailslastName"></p>
+        <p id="detailsBirth"></p>
+        <p id="detailsEmail"></p>
+        <p id="detailsPhone"></p>
+        <button id="editContact">Edit</button>
+        <button id="deleteContact">Delete</button>
+        </div>
+
+        <div id="editForm">
+            <label for="editName">Firstname:</label>
+            <input type="text" id="editFirstName">
+            <label for="editName">Lastname:</label>
+            <input type="text" id="editLastName">
+            <label for="editBirth">Date of Birth</label>
+            <input type="date" id="editBirth">
+            <label for="editEmail">Email:</label>
+            <input type="email" id="editEmail">
+            <label for="editPhone">Téléphone:</label>
+            <input type="text" id="editPhone">
+            <button id="saveEdit">Send</button>
+            
+        </div>
+
+        <script src="./js/script.js"></script>
+
+    </body>
+</html>
